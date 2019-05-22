@@ -1,0 +1,12 @@
+<h1>니가 입력한 글짜는 단어로 구성돼있덴다</h1>
+<a href="{% url 'woo' %}">다시해라</a>
+
+<h1>입력한거</h1>
+{{fulltext}}
+
+<h1>단어갯수</h1>
+{% for word, countTotal in dictionary %}
+    {{word}} - {{countTotal}}
+
+<br>
+{% endfor %}
