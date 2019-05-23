@@ -1,10 +1,20 @@
-{% load static %}
+<br>
 
-<img src="{% static 'images/IMG.jpg' %}" alt="">
+<style>
+    img{
+        width : 300px;
+    }
+</style>
+<center>
+<img src="https://github.com/joowoosong/Python_wordcount/blob/master/wordcount/static/images/IMG.jpg?raw=true" alt="">
 
-<h1>About</h1>
+<h1> 안내문</h1>
+<hr>
+<p>멋쟁이 사자처럼 at 삼육대 우송</p>
+<p>글씨 수를 세주는 기능</p>
 
-<p>믓쟁이 우송처럼 at 삼육대 우송이 작품</p>
-<p>마! 니 글짜 몇 개 넣었노?</p>
+<br>
+<br>
+<a href="{% url 'woo' %}"><strong>홈으로 가기</a></strong>
 
-<a href="{% url 'woo' %}">woo페이지로 가기</a>
+</center>
